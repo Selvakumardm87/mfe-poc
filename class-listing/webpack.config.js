@@ -41,15 +41,15 @@ module.exports = {
           "tocViewer": "tocViewer@http://localhost:4202/remoteEntry.js",
      },
 
-        shared: share({
-          "@angular/core": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
-          "@angular/common": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
-          "@angular/common/http": { singleton: true, strictVersion: true, requiredVersion: 'auto' }, 
-          "@angular/router": { singleton: true, strictVersion: true, requiredVersion: 'auto' },
+        /*shared: share({
+          "@angular/core": { singleton: false }, 
+          "@angular/common": { singleton: false }, 
+          "@angular/common/http": { singleton: false }, 
+          "@angular/router": { singleton: false },
 
           ...sharedMappings.getDescriptors()
         })
-        
+*/        
     }),
     sharedMappings.getPlugin()
   ],

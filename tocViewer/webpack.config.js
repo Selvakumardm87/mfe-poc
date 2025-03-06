@@ -43,15 +43,15 @@ module.exports = {
 
         // },
 
-        shared: share({
-          "@angular/core": { singleton: true }, 
-          "@angular/common": { singleton: true }, 
-          "@angular/common/http": { singleton: true }, 
-          "@angular/router": { singleton: true },
+        /*shared: share({
+          "@angular/core": { singleton: false }, 
+          "@angular/common": { singleton: false }, 
+          "@angular/common/http": { singleton: false }, 
+          "@angular/router": { singleton: false },
 
           ...sharedMappings.getDescriptors()
         })
-        
+        */
     }),
     sharedMappings.getPlugin()
   ],
